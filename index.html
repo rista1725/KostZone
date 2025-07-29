@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KOS ZONE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --pink: #c88f7d;
+      --krem: #dbbc9a;
+      --coklat-tua: #5d3427;
+      --taupe: #9b7f6f;
+      --beige: #cebbae;
+      --coklat-medium: #6b3c2d;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f6f2;
+      color: var(--coklat-tua);
+    }
+
+    header {
+      background: white;
+      padding: 1rem 0;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      height: 36px;
+    }
+
+    .logo span {
+      font-weight: 600;
+      font-size: 1.3rem;
+      color: var(--coklat-medium);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--coklat-medium);
+      font-weight: 500;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 2rem;
+      padding: 4rem 1rem;
+      background: #fff;
+    }
+
+    .hero img {
+      width: 100%;
+      border-radius: 16px;
+    }
+
+    .hero-text h1 {
+      font-size: 3rem;
+      color: var(--coklat-medium);
+      margin-bottom: 1rem;
+    }
+
+    .hero-text p {
+      font-size: 1.1rem;
+      color: var(--taupe);
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    .cta-button {
+      background: var(--pink);
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .product-section {
+      background: #faf7f4;
+      padding: 4rem 1rem;
+    }
+
+    .product-section h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 3rem;
+      color: var(--coklat-medium);
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 12px;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .product-card img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .product-card h4 {
+      color: var(--coklat-tua);
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+    }
+
+    .product-card p {
+      color: var(--taupe);
+      font-size: 0.9rem;
+    }
+
+    footer {
+      background: #f1eae4;
+      padding: 2rem 1rem;
+      text-align: center;
+      color: var(--coklat-medium);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <img src="assets/logo.png" alt="Logo" />
+          <span>KOS ZONE</span>
+        </div>
+        <div class="nav-links">
+          <a href="#">Home</a>
+          <a href="#produk">Produk</a>
+          <a href="#kontak">Kontak</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-text">
+        <h1>Barang Bekas, Harga Cerdas</h1>
+        <p>Marketplace khusus anak kos untuk jual beli barang bekas dengan aman dan nyaman. Temukan atau jual barangmu sekarang juga!</p>
+        <a href="#produk" class="cta-button">Jelajahi Produk</a>
+      </div>
+      <div>
+        <img src="assets/banner.png" alt="Hero Banner" />
+      </div>
+    </div>
+  </section>
+
+  <section class="product-section" id="produk">
+    <div class="container">
+      <h2>Produk Pilihan</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="assets/produk1.jpg" alt="Produk 1" />
+          <h4>Meja Belajar</h4>
+          <p>Bekas pakai, kondisi 90%. Lokasi kos Putri UGM.</p>
+        </div>
+        <div class="product-card">
+          <img src="assets/produk2.jpg" alt="Produk 2" />
+          <h4>Kipas Angin</h4>
+          <p>Nyala normal. Bisa COD sekitar Pogung.</p>
+        </div>
+        <div class="product-card">
+          <img src="assets/produk3.jpg" alt="Produk 3" />
+          <h4>Rak Kecil</h4>
+          <p>Bisa titip antar ke titik terdekat kampus.</p>
+        </div>
+        <div class="product-card">
+          <img src="assets/produk4.jpg" alt="Produk 4" />
+          <h4>Dispenser</h4>
+          <p>Full fungsi, mulus. Harga nego manis!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 KOS ZONE. All rights reserved.</p>
+  </footer>
+</body>
+</html>
